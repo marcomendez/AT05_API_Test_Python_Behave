@@ -2,14 +2,16 @@
 # the userID should be only numbers between 1 to 100. Username should be
 # only lowercase (nor more than 8 digits)
 import re
-
+#Variable global
 dict = {}
+#Dictonary that allow number between 1 - 100
 def DictionaryAllowNumber1To100(key,value):
     cad=""
     cad=value
     if(key > 0  and key <= 100 and len(value) <= 8 and cad.islower()):
         dict[key]=value
 
+# method that search by IdUser.
 def searchNumberId(idUser):
     result = [ ]
     reObj = re.compile(str(idUser))
@@ -18,8 +20,8 @@ def searchNumberId(idUser):
             result.append(key)
     return result
 
-
-def searchCharacterStarValue(valueStart):
+#search characters start value
+def searchCharacterStartValue(valueStart):
     result = []
     for valuesName in dict.values():
         if (str(valuesName).startswith(valueStart)):
@@ -63,7 +65,7 @@ DictionaryAllowNumber1To100(100,"keila")
 
 print(searchNumberId(1))
 print(searchNumberId(2))
-print(searchCharacterStarValue("m"))
+print(searchCharacterStartValue("m"))
 
 displayMessageForGroup()
 

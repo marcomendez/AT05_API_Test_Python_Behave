@@ -3,7 +3,6 @@
 #Your are teenager, when the age is between 13 and 17
 #You are young, when the age is between 18 and 29
 #You are adult, when the age is greater than 30
-
 def printStutusAge(age):
     if(age < 12):
         print("You are a child")

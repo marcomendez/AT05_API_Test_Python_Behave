@@ -1,4 +1,4 @@
-from ClassPractice.Person import Person
+from Practice5.ClassPractice import Person
 
 
 class Employee(Person):

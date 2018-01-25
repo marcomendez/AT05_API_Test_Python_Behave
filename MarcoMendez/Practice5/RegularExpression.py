@@ -1,4 +1,6 @@
 import re
+
+#validate the userName.
 def userName(name):
     expre = re.compile("[a-z0-9-_]*$")
     result =str(expre.match(name))
@@ -7,6 +9,7 @@ def userName(name):
     else:
         print("Bad username ")
 
+#validate a password usiing regular expressiones.
 def password(password):
     expre = re.compile("[a-zA-Z0-9]{8,16}$")
     result = str(expre.match(password))
@@ -16,6 +19,7 @@ def password(password):
         print("Bad password")
 
 
+#validate a email using regular expression.
 def email(em):
     expre=re.compile('^[\w]+@[\w-]+\.[a-zA-Z]{2,3}(\.[a-zA-Z]{2,2})?$')
     result=str(expre.match(em))

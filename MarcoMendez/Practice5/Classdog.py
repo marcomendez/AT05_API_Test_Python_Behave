@@ -1,3 +1,5 @@
+
+#Example of call and creation of variable of instance.
 class Dog:
 
     def __init__(self, name):

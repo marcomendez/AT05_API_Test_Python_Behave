@@ -4,7 +4,7 @@ from Practice5.lengthDictionary import printDictiory
 from Practice5.lengthDictionary import getDirectory
 from Practice5.printStatusAge import printStutusAge
 
-
+#This method load Item in dictonary.
 def loadUser():
     lengthDictionary()
     printDictiory()
@@ -24,6 +24,8 @@ def printMessageStatusAge():
         print("-------------------------")
         print(key, "age", d[key])
         printStutusAge(int(d[key]))
+
+
 
 
 loadUser()

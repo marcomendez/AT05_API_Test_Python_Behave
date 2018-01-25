@@ -1,6 +1,6 @@
 #Calculate age in minutes, hours and days
-
 def calculateAgeInMinutesHoursAndDays(age):
+    """ this method calculate Age in minutes, hours and days """
     diaAux = 365
     minutes = 60
     aDia = 24
