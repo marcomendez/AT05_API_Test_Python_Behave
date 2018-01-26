@@ -1,8 +1,10 @@
-from Practice5.CalculateAgeInMinutesHoursAndDays import calculateAgeInMinutesHoursAndDays
-from Practice5.lengthDictionary import lengthDictionary
-from Practice5.lengthDictionary import printDictiory
-from Practice5.lengthDictionary import getDirectory
-from Practice5.printStatusAge import printStutusAge
+from Practices.CalculateAgeInMinutesHoursAndDays import calculateAgeInMinutesHoursAndDays
+from Practices.printStatusAge import printStutusAge
+
+from Practices.PracticesCalculatesDictonariesAndOthers.lengthDictionary import getDirectory
+from Practices.PracticesCalculatesDictonariesAndOthers.lengthDictionary import lengthDictionary
+from Practices.PracticesCalculatesDictonariesAndOthers.lengthDictionary import printDictiory
+
 
 #This method load Item in dictonary.
 def loadUser():
